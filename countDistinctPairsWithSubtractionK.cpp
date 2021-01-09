@@ -10,8 +10,8 @@ int countPairs( int arr[], int n, int k )
             mp.insert( { arr[i],1 } );
         }
     }
-    map<int,int>::iterator itr;
-    /*for( itr=mp.begin(); itr!=mp.end(); itr++ ) {
+    /*map<int,int>::iterator itr;
+    for( itr=mp.begin(); itr!=mp.end(); itr++ ) {
         cout<<itr->first<<" "<<itr->second<<endl;
     }*/
     for( int i=0; i<n; i++ ) {
