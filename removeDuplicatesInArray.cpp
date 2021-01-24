@@ -22,3 +22,27 @@ int main()
     for( int i =0; i<n; i++ )
         cout<<arr[i]<<" ";
 }
+/*
+// Remove Duplicates from an Unsorted Array
+// Using Map
+//TimeComplexity: O( n )
+#include<bits/stdc++.h>
+using namespace std;
+void removeDuplicates( int arr[], int n )
+{
+    map<int,bool> m;
+    for( int i=0; i<n; i++ ) {
+        if( m.find(arr[i]) == m.end() )
+            cout<<arr[i]<<" ";
+        m.insert({arr[i],true});
+    }
+}
+int main()
+{
+    int arr[] = { 1, 2, 5, 1, 7, 2, 4, 2 };;
+    int n = sizeof(arr)/sizeof(arr[0]);
+
+    removeDuplicates(arr,n);
+}
+
+*/
